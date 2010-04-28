@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
+require 'haml'
 
 get '/' do
-  'Hello ping-pong!'
+  haml :index
 end
