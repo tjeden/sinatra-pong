@@ -7,8 +7,8 @@ Feature: Registration feature
   Scenario: Register and log in
     Given I am the guest
     And I go to the home page
-    Then I should see "register"
-    When I follow "register"
+    Then I should see "sign up"
+    When I follow "sign up"
     And I fill in "Username" with "jack"
     And I fill in "E-mail" with "user@example.com"
     And I fill in "Password" with "password"
