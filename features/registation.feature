@@ -9,9 +9,8 @@ Feature: Registration feature
     And I go to the home page
     Then I should see "sign up"
     When I follow "sign up"
-    And I fill in "Username" with "jack"
-    And I fill in "E-mail" with "user@example.com"
+    And I fill in "Email" with "user@example.com"
     And I fill in "Password" with "password"
-    And I fill in "Password confirmation" with "password"
-    And I press "Create my account"
-    Then I should see "Account created, now you can log in"
+    And I fill in "Confirm Password" with "password"
+    And I press "Create account"  
+    Then I should see "Account created"
