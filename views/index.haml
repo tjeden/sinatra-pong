@@ -1,3 +1,9 @@
 %p
+  - if logged_in?
+    %a{ :href => '/logout'}logout
+  - else
+    %a{ :href => '/signup'}sign up
+    %a{ :href => '/login'}login
+%p
   Hello ping-pong!
-  %a{ :href => '/signup'}sign up
+
